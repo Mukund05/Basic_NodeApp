@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB (replace 'your-database-url' with your actual database URL)
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("your-database-url", { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Middleware for JSON parsing
 app.use(express.json());
